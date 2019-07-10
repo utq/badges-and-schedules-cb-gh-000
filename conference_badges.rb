@@ -20,6 +20,10 @@ def assign_rooms(array)
 end
 
 def printer(array)
-  batch_badge_creator(array)
-  assign_rooms(array)
+  res1 = batch_badge_creator(array)
+  res2 = assign_rooms(array)
+  res.each_with_index do |speaker, index|
+    puts speaker
+    puts res2[index]
+  end
 end
