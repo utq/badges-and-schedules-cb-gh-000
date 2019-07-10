@@ -9,4 +9,11 @@ def badge_maker(name)
   puts "Hello, my name is" + name "."
 end
 
-assign_rooms
+def assign_rooms(array)
+  roomNo = 1
+  array.each do |speaker|
+    badge_maker(speaker)
+    puts "Hello, " + speaker + "! You'll be assigned to room "+ roomNo + "!"
+    roomNo += 1
+  end
+end
