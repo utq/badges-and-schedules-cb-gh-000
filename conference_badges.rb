@@ -22,7 +22,7 @@ end
 def printer(array)
   res1 = batch_badge_creator(array)
   res2 = assign_rooms(array)
-  res.each_with_index do |speaker, index|
+  res1.each_with_index do |speaker, index|
     puts speaker
     puts res2[index]
   end
