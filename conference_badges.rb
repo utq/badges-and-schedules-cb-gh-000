@@ -4,6 +4,7 @@ def batch_badge_creator(array)
   array.each do |speaker|
     newArray.push(badge_maker(speaker))
   end
+  newArray
 end
 
 def badge_maker(name)
@@ -15,6 +16,7 @@ def assign_rooms(array)
   array.each_with_index do |speaker, index|
     newArray.push("Hello, " + speaker + "! You'll be assigned to room "+ index + 1 + "!")
   end
+  newArray
 end
 
 def printer(array)
