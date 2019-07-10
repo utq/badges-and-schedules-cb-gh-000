@@ -2,7 +2,7 @@
 def batch_badge_creator(array)
   newArray = []
   array.each do |speaker|
-    array.push(badge_maker(speaker))
+    newArray.push(badge_maker(speaker))
   end
 end
 
